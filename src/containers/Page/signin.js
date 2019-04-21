@@ -25,7 +25,7 @@ class SignIn extends Component {
   handleLogin = () => {
     const { login, history } = this.props;
     const userInfo = {
-      username: document.getElementById("inputUserName").value || "",
+      email: document.getElementById("inputUserName").value || "",
       password: document.getElementById("inpuPassword").value || ""
     };
     login({ history, userInfo });
